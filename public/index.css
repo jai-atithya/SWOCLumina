@@ -34,7 +34,7 @@ html, body {
     justify-content: space-between;
     width: 100%;
     padding: 30px 50px;
-    height: 40%;
+    height: 2ch;
 }
 .icon{
     font-size: medium;
@@ -106,7 +106,6 @@ html, body {
 
 #home #homemain {
     width: 100%;
-    padding: 12vw 10vw;
 }
 
 #homemain h1 {
@@ -116,15 +115,29 @@ html, body {
 }
 
 .headings {
+    width: 100%;
+    height: 100%;
+    padding-left: 4.0vw;
     display: flex ;
-    gap: 1.5vw; /*responsive*/
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 1.0vw; /*responsive*/
 }
 
 .f1{
     font-size: 0.8rem;
     word-spacing: 0.1rem;
 }
-
+.hvr{
+    color: transparent;
+    -webkit-text-stroke: 1px #000;
+    font-size: 7vw;
+    font-weight: 900;
+    line-height: 1;
+    letter-spacing: -6px;
+    text-decoration: none;
+}
 #homemain .headings h1 {
     color: transparent;
     -webkit-text-stroke: 1px #000;
@@ -139,11 +152,11 @@ html, body {
 }
 
 #homelast {
-    padding: 0.5vw 10vw;
+    text-align: center;
 }
 
 #homelast p {
-    width: 70%;
+    width: 100%;
     font-size: 1.6vw;
     font-weight: 400;
     letter-spacing: -.08vw;
