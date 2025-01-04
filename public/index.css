@@ -19,22 +19,31 @@ html, body {
 #main {
     height: 100%;
     width: 100%;
-    background-color: rgb(247, 247, 178);
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
 }
 
 #home {
     width: 100%;
     min-height: auto;
+    scroll-snap-align: start;
+    padding-top: 5%;
 }
 
 #nav {
     display: flex;
     align-items: center;
-    background-color:#f7e2b1ea;
+    background-color:#f0b52a;
     justify-content: space-between;
-    width: 100%;
+    position: sticky;
+    margin: auto;
+    top: 1vw;
+    border-radius: 5vw;
+    width: 80%;
     padding: 30px 50px;
-    height: 2ch;
+    height: 5%;
+    z-index: 10;
+    box-shadow: #f0b52a 0px 0px 40px 10px;
 }
 .icon{
     font-size: medium;
@@ -108,6 +117,7 @@ html, body {
     width: 100%;
 }
 
+
 #homemain h1 {
     font-weight: 500;
     letter-spacing: -.1vw;
@@ -137,6 +147,7 @@ html, body {
     line-height: 1;
     letter-spacing: -6px;
     text-decoration: none;
+    z-index: 1;
 }
 #homemain .headings h1 {
     color: transparent;
@@ -259,6 +270,7 @@ html, body {
 #dev {
     width: 100%;
     padding: 5vw 10vw;
+    scroll-snap-align: start;
     
 }
 
