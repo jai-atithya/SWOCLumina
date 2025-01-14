@@ -28,6 +28,7 @@ html, body {
     min-height: auto;
     scroll-snap-align: start;
     padding-top: 5%;
+    padding-left: 5%;
 }
 
 #nav {
