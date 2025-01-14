@@ -105,11 +105,13 @@ html, body {
 
 @media (max-width: 1000px) {
     #nav{
+        position: relative;
         width: 100%;
         height: 2%;
         top: 0;
         border-radius: 0;
         text-align: center;
+        scroll-snap-align: start;
     }
     #nav #right {
         display: none;
@@ -158,7 +160,7 @@ html, body {
     flex-direction: column;
     justify-content: center;
     align-items: start;
-    gap: 1.0vw; /*responsive*/
+    gap: 1.0vw;
 }
 
 .f1{
@@ -204,6 +206,23 @@ html, body {
     background-color: #000;
 }
 
+@media (max-width: 1200px) {
+    #homemain h1 {
+        font-size: 2rem; 
+    }
+
+    .headings {
+        padding-left: 5vw; 
+    }
+
+    .hvr {
+        font-size: 4rem; 
+    }
+
+    #homelast p {
+        font-size: 1rem;
+    }
+}
 #featured {
     padding: 10vw 15vw;
 }
