@@ -56,3 +56,10 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     }
 });
+
+const hamburgerIcon = document.getElementById('hamburger-icon');
+const rightNav = document.getElementById('right');
+
+hamburgerIcon.addEventListener('click', () => {
+    rightNav.classList.toggle('active');
+});
